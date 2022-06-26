@@ -16,7 +16,7 @@
             "request": "launch",
             "mode": "executable",
             "preLaunchTask": "build",
-            "executable": "C:/Program Files (x86)/Godot_v3.4.4_mono/Godot.exe\r",
+            "executable": "/home/danilo/Apps/Godot_3.4/Godot.64",
             "executableArguments": [
                 "--path",
                 "${workspaceRoot}"
@@ -28,7 +28,7 @@
             "request": "launch",
             "mode": "executable",
             "preLaunchTask": "build",
-            "executable": "C:/Program Files (x86)/Godot_v3.4.4_mono/Godot.exe\r",
+            "executable": "/home/danilo/Apps/Godot_3.4/Godot.64",
             "executableArguments": [
                 "--path",
                 "${workspaceRoot}",

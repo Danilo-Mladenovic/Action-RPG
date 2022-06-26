@@ -3,7 +3,7 @@
     "tasks": [
         {
             "label": "build",
-            "command": "C:/Program Files (x86)/Godot_v3.4.4_mono/Godot.exe\r",
+            "command": "/home/danilo/Apps/Godot_3.4/Godot.64",
             "type": "process",
             "args": [
                 "--build-solutions",
