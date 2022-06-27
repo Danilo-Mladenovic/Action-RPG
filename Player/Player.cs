@@ -6,8 +6,8 @@ public class Player : KinematicBody2D
 
     private Vector2 velocity;
     private int MAX_SPEED = 150;
-    private int ACCELERATION = 50;
-    private float FRICTION = 25;
+    private int ACCELERATION = 300;
+    private float FRICTION = 300;
 
     public override void _Ready()
     {
@@ -22,13 +22,10 @@ public class Player : KinematicBody2D
         inputVector = inputVector.Normalized();
 
         if (inputVector != Vector2.Zero)
-        {
-            velocity += inputVector * ACCELERATION * delta;
-            velocity = velocity.Clamped(MAX_SPEED * delta);
-        }
+            velocity = velocity.MoveToward(inputVector * MAX_SPEED, ACCELERATION * delta);
         else
             velocity = velocity.MoveToward(Vector2.Zero, FRICTION * delta);
 
-        MoveAndCollide(velocity);
+        MoveAndCollide(velocity * delta);
     }
 }
